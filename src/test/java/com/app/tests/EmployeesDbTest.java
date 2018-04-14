@@ -42,9 +42,9 @@ public class EmployeesDbTest {
 		//Connect to oracle DB
 		//employees fullname with Employee ID 105 should be David Austin
 		List<Map<String,Object>> empData = DBUtility.runSQLQuery(
-				"Select first_name, last_name FROM employees WHERE employee_id=105");
-		assertEquals(empData.get(0).get("FIRST_NAME"),"David");
-		assertEquals(empData.get(0).get("LAST_NAME"),"Austin");
+				"Select first_name, last_name FROM employees WHERE employee_id=106");
+		assertEquals(empData.get(0).get("FIRST_NAME"),"Valli");
+		assertEquals(empData.get(0).get("LAST_NAME"),"Pataballa");
 	}
 	
 }
